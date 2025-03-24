@@ -1,0 +1,6 @@
+<!-- <app-stock-input (symbolAdded)="addSymbol($event)"></app-stock-input> -->
+<app-stock-input #inputRef></app-stock-input>
+<div style="display: flex; justify-content: space-around; margin-top: 20px">
+  <app-stock-table [data]="yahooData()" title="Yahoo Finance"></app-stock-table>
+  <app-stock-table [data]="alphaData()" title="Alpha Vantage"></app-stock-table>
+</div>

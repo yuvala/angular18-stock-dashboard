@@ -1,0 +1,21 @@
+<h3>{{ title }}</h3>
+ 
+ <table *ngIf="data.length > 0">
+      <thead>
+        <tr>
+          <th>Symbol</th>
+          <th>Price</th>
+          <th>Change</th>
+          <th>Change %</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let stock of data">
+          <td>{{ stock.symbol }}</td>
+          <td>{{ stock.price }}</td>
+          <td>{{ stock.change }}</td>
+          <td>{{ stock.changePercent }}</td>
+        </tr>
+      </tbody>
+    </table>  
+ 
